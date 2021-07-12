@@ -12,3 +12,35 @@ We were provided with a dataset consisting of news articles and tweets which bel
 We approached each of these sub problems separately, using three different models for each task. We used state of the art **Transformers** for the purpose of
 classification of tweets/articles and generation of headlines. We used **VADER** for Sentiment Extraction which is a sentiment analysis model. The specific
 approaches are discussed in more detail in later sections.
+
+# Setup 
+
+Run the following commands to set-up environment:  
+```
+git clone https://github.com/AniketRajpoot/Automated-Headline-and-Sentiment-Generator.git  
+cd Automated-Headline-and-Sentiment-Generator  
+pip install -r requirements.txt  
+```
+## Pre-trained checkpoints:  
+
+Run the following command:
+```
+gdown --id 1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a
+```
+Alternatively, the link to the same is given below:
+```
+https://drive.google.com/file/d/1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a/view?usp=sharing
+```
+
+
+## Text Classification
+
+```
+python -u scripts/predict_headline.py --file <FILEPATH> <OR>  
+python -u scripts/predict_headline.py --sen <SENTENCE>  
+```
+
+### Sample run:
+```
+python -u scripts/predict_headline.py --file 'sample_article.txt' 
+```
