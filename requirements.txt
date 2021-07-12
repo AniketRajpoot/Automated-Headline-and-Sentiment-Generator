@@ -1,0 +1,10 @@
+transformers
+spacy 
+sentencepiece
+langdetect
+pytorch-lightning
+fasttext
+googletrans
+google_trans_new
+dl-translate
+keras
