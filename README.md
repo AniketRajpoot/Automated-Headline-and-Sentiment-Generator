@@ -44,3 +44,8 @@ python -u scripts/predict_headline.py --sen <SENTENCE>
 ```
 python -u scripts/predict_headline.py --file 'sample_article.txt' 
 ```
+
+
+# Support
+
+There are many ways to support a project - starring⭐️ the GitHub repo is just one.
