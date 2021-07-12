@@ -1,13 +1,8 @@
-import pandas as pd
-import numpy as np
-np.random.seed(1337)
 import tensorflow as tf
 import keras
 from keras import Sequential
 from tensorflow.keras.utils import Sequence
 from keras.layers import LSTM, Dense, Masking
-import numpy as np
-
 from keras.utils import np_utils
 from keras import optimizers
 from keras.models import Sequential, Model
@@ -15,9 +10,8 @@ from keras.layers import Embedding, Dense, Input, concatenate, Layer, Lambda, Dr
 import datetime
 from datetime import datetime
 from keras.callbacks import ModelCheckpoint, EarlyStopping, Callback, TensorBoard
-
+from keras.preprocessing.sequence import  pad_sequences
 import tensorflow_hub as hub
-
 import numpy as np
 import pandas as pd
 import fnmatch
@@ -46,14 +40,17 @@ import torch
 import torch as t
 import argparse
 
+MAX_LEN = 512
+
+np.random.seed(1337)
 
 parser = argparse.ArgumentParser(description='LUS keypoint network pytorch-lightning parallel')
 parser.add_argument('--filename', type=str, default='', help='Enter text file path to be classified into tech/non-tech')
 parser.add_argument('--sen', type=str, default='', help='')
 
 args = parser.parse_args()
-print(args.filename)
-print(args.sen)
+# print(args.filename)
+# print(args.sen)
 
 if args.filename != '':
   txt_file = args.filename
@@ -82,7 +79,6 @@ model.cuda()
 model.load_state_dict(torch.load('article(chunked)+tweets_model_8epochs.bin')) 
 #Our pretrained model downloaded at top level
 
-
 #Processing text
 tokens = tokenizer.tokenize(text)
 encoded_sent = tokenizer.encode(
@@ -99,9 +95,7 @@ having only 200 tokens (for instance)(note that the words in the sentence are >2
 
 the transformer in usage takes token length of exactly 512, hence, the remaining 512-200=312 tokens would be filled with '0' value,
 as seen below in the attribute 'value=0'
-
 '''
-MAX_LEN = 512
 
 input_ids = pad_sequences([encoded_sent], maxlen = MAX_LEN, dtype = "long", value=0, 
   truncating="post", padding="post")
