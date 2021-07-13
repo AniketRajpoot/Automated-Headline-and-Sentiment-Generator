@@ -18,8 +18,8 @@ approaches are discussed in more detail in later sections.
 - [:heavy_check_mark:] [Headline Generation : **MT5**](Headline_generation_code/)
 
 ## Features to be implemented
-- [ ] Implementation of scripts for headline generation and sentiment extraction. 
-- [ ] Implementation of complete single pipeline performing all the three steps in order. 
+- [:white_check_mark:] Implementation of scripts for headline generation and sentiment extraction. 
+- [:white_check_mark:] Implementation of complete single pipeline performing all the three steps in order. 
 
 # Setup 
 
