@@ -32,6 +32,8 @@ pip install -r requirements.txt
 ```
 ## Pre-trained checkpoints:  
 
+### **XLM-RoBERTa**
+
 Run the following command:
 ```
 gdown --id 1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a
@@ -41,14 +43,15 @@ Alternatively, the link to the same is given below:
 https://drive.google.com/file/d/1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a/view?usp=sharing
 ```
 
-## Text Classification
+## Scripts
+
+### Text Classification
 
 ```
 python -u scripts/predict_headline.py --file <FILEPATH> <OR>  
 python -u scripts/predict_headline.py --sen <SENTENCE>  
 ```
-
-### Sample run:
+Sample run:
 ```
 python -u scripts/predict_headline.py --file 'sample_article.txt' 
 ```
