@@ -13,6 +13,11 @@ We approached each of these sub problems separately, using three different model
 classification of tweets/articles and generation of headlines. We used **VADER** for Sentiment Extraction which is a sentiment analysis model. The specific
 approaches are discussed in more detail in later sections.
 
+## Models Used 
+
+1. Text Classification : **XLM-RoBERTa**
+2. Sentiment Extraction : **VADER**
+3. Headline Generation : **MT5**
 # Setup 
 
 Run the following commands to set-up environment:  
