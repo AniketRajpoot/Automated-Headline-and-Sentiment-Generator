@@ -17,9 +17,10 @@ approaches are discussed in more detail in later sections.
 - [:heavy_check_mark:] [Sentiment Extraction : **VADER**](Brand_and_sentiment_identification_code/)
 - [:heavy_check_mark:] [Headline Generation : **MT5**](Headline_generation_code/)
 
-## Features to be implemented
-- [:&#9746:] Implementation of scripts for headline generation and sentiment extraction. 
-- [:&#9746:] Implementation of complete single pipeline performing all the three steps in order. 
+## Features provided 
+- [x] Implementation of script and complete procedure for Text Classification with instructions. 
+- [ ] Implementation of scripts for headline generation and sentiment extraction. 
+- [ ] Implementation of complete single pipeline performing all the three steps in order. 
 
 # Setup 
 
