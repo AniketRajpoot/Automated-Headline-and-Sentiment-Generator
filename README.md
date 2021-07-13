@@ -14,10 +14,10 @@ classification of tweets/articles and generation of headlines. We used **VADER**
 approaches are discussed in more detail in later sections.
 
 ## Models Used 
+- [x] Text Classification : **XLM-RoBERTa**
+- [x] Sentiment Extraction : **VADER**
+- [x] [Headline Generation : **MT5**](Headline_generation_code/)
 
-1. Text Classification : **XLM-RoBERTa**
-2. Sentiment Extraction : **VADER**
-3. Headline Generation : **MT5**
 # Setup 
 
 Run the following commands to set-up environment:  
