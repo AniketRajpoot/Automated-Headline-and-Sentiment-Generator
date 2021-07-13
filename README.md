@@ -2,7 +2,6 @@
 # Overview
 **Digital content** is expanding at a very rapid pace. Many activities that experts undertake today involve the ability to process digital content and synthesize them to make decisions.
 
-
 We were provided with a dataset consisting of news articles and tweets which belong to either **mobile technology**. The problem statement consisted of 3 parts : 
 
 1. Develop an intelligent system that could first identify the theme of tweets and articles.
@@ -17,6 +16,10 @@ approaches are discussed in more detail in later sections.
 - [:heavy_check_mark:] [Text Classification : **XLM-RoBERTa**](Text_classification_code/)
 - [:heavy_check_mark:] [Sentiment Extraction : **VADER**](Brand_and_sentiment_identification_code/)
 - [:heavy_check_mark:] [Headline Generation : **MT5**](Headline_generation_code/)
+
+## Features to be implemented
+- [ ] Implementation of scripts for headline generation and sentiment extraction. 
+- [ ] Implementation of complete single pipeline performing all the three steps in order. 
 
 # Setup 
 
@@ -37,7 +40,6 @@ Alternatively, the link to the same is given below:
 https://drive.google.com/file/d/1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a/view?usp=sharing
 ```
 
-
 ## Text Classification
 
 ```
@@ -49,7 +51,6 @@ python -u scripts/predict_headline.py --sen <SENTENCE>
 ```
 python -u scripts/predict_headline.py --file 'sample_article.txt' 
 ```
-
 
 # Support
 
