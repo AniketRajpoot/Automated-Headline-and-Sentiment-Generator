@@ -43,17 +43,39 @@ Alternatively, the link to the same is given below:
 https://drive.google.com/file/d/1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a/view?usp=sharing
 ```
 
+### **MT5**
+
+Run the following command:
+```
+!gdown --id 1ncA3AMBPEFvfv8xMdLrl6vCSzNUu3sw9
+```
+Alternatively, the link to the same is given below:
+```
+https://drive.google.com/file/d/1ncA3AMBPEFvfv8xMdLrl6vCSzNUu3sw9/view?usp=sharing
+```
+
 ## Scripts
 
 ### Text Classification
 
 ```
-python -u scripts/predict_headline.py --file <FILEPATH> <OR>  
-python -u scripts/predict_headline.py --sen <SENTENCE>  
+python -u scripts/predict_class.py --file <FILEPATH> <OR>  
+python -u scripts/predict_class.py --sen <SENTENCE>  
 ```
 Sample run:
 ```
-python -u scripts/predict_headline.py --file 'sample_article.txt' 
+python -u scripts/predict_class.py --file 'sample_article.txt' 
+```
+
+### Headline Generation
+
+```
+python -u scripts/predict_headline.py --file <FILEPATH> <OR>  
+python -u scripts/predict_headline.py --sen <SENTENCE>  --num_sentences <NO OF HEADLINES>  
+```
+Sample run:
+```
+python -u scripts/predict_headline.py --file 'sample_article_2.txt' --num_sentences 5 
 ```
 
 # Support
