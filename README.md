@@ -2,7 +2,6 @@
 # Overview
 **Digital content** is expanding at a very rapid pace. Many activities that experts undertake today involve the ability to process digital content and synthesize them to make decisions.
 
-
 We were provided with a dataset consisting of news articles and tweets which belong to either **mobile technology**. The problem statement consisted of 3 parts : 
 
 1. Develop an intelligent system that could first identify the theme of tweets and articles.
@@ -12,6 +11,16 @@ We were provided with a dataset consisting of news articles and tweets which bel
 We approached each of these sub problems separately, using three different models for each task. We used state of the art **Transformers** for the purpose of
 classification of tweets/articles and generation of headlines. We used **VADER** for Sentiment Extraction which is a sentiment analysis model. The specific
 approaches are discussed in more detail in later sections.
+
+## Models Used 
+- [:heavy_check_mark:] [Text Classification : **XLM-RoBERTa**](Text_classification_code/)
+- [:heavy_check_mark:] [Sentiment Extraction : **VADER**](Brand_and_sentiment_identification_code/)
+- [:heavy_check_mark:] [Headline Generation : **MT5**](Headline_generation_code/)
+
+## Features provided 
+- [x] Implementation of script and complete procedure for Text Classification with instructions. 
+- [ ] Implementation of scripts for headline generation and sentiment extraction. 
+- [ ] Implementation of complete single pipeline performing all the three steps in order. 
 
 # Setup 
 
@@ -23,6 +32,8 @@ pip install -r requirements.txt
 ```
 ## Pre-trained checkpoints:  
 
+### **XLM-RoBERTa**
+
 Run the following command:
 ```
 gdown --id 1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a
@@ -32,19 +43,18 @@ Alternatively, the link to the same is given below:
 https://drive.google.com/file/d/1mBhGHYOTnikOJD3KOBK1s_FuCjaiUR1a/view?usp=sharing
 ```
 
+## Scripts
 
-## Text Classification
+### Text Classification
 
 ```
 python -u scripts/predict_headline.py --file <FILEPATH> <OR>  
 python -u scripts/predict_headline.py --sen <SENTENCE>  
 ```
-
-### Sample run:
+Sample run:
 ```
 python -u scripts/predict_headline.py --file 'sample_article.txt' 
 ```
-
 
 # Support
 
